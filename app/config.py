@@ -52,7 +52,7 @@ class DevelopmentConfig(BaseConfig):
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
     MONGO_DB = 'bcxx2tpumq7kmfi'
-    MONGO_URI = f'mongodb://ulynst36u2bofmc0umcn:7SgZu3rcY4ctqFm3p6Uv@{MONGO_DB}-mongodb.services.clever-cloud.com:27017/{MONGO_DB}'
+    MONGO_URI = f'mongodb+srv://a2z_db:a2z_events@cluster0.cyqhg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
     SECRET_KEY = 'a5ea0c77491f965420dfa379ddb6105adb0e3e88'
     JWT_SECRET_KEY = 'super-secret'
 
