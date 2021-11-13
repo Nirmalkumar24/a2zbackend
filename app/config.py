@@ -53,7 +53,7 @@ class DevelopmentConfig(BaseConfig):
     MAIL_USE_SSL = True
     #MONGO_DB = 'bcxx2tpumq7kmfi'
     MONGO_KEY = 'a2z_events'
-    MONGO_URI = f'mongodb+srv://a2z_db:{MONGO_KEY}@cluster0.cyqhg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    MONGO_URI = f'mongodb+srv://a2z_db:{os.environ.get("password")}@cluster0.cyqhg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
     SECRET_KEY = 'a5ea0c77491f965420dfa379ddb6105adb0e3e88'
     JWT_SECRET_KEY = 'super-secret'
 
